@@ -124,10 +124,13 @@ export default {
         images: [
           {
             src:
-              "https://starmathsonline.com.au/wp-content/uploads/2019/12/Teacher-Dashboard-1.png",
+              "/static/fullstackdeveloper-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src: "/static/fullstackdeveloper-2.png",
+          },
+          {
+            src: "/static/fullstackdeveloper-3.png",
           },
         ],
         colourClass: "deep-orange darken-4",
@@ -158,10 +161,17 @@ export default {
         images: [
           {
             src:
-              "https://starmathsonline.com.au/wp-content/uploads/2019/12/Asset-30.png",
+              "/static/gamedev-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src: "/static/gamedev-2.png",
+          },
+          {
+            src:
+              "/static/gamedev-3.png",
+          },
+          {
+            src: "/static/gamedev-4.png",
           },
         ],
         colourClass: "purple darken-4",
@@ -196,10 +206,14 @@ export default {
         images: [
           {
             src:
-              "https://raw.githubusercontent.com/kngo5553/MatchM-Website/master/qr-code.png?token=ACFGGHHMLSSAK4MFTL2M7WK7HVDU2",
+              "/static/matchm-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src: "/static/matchm-2.png",
+          },
+          {
+            src:
+              "/static/matchm-3.png",
           },
         ],
         colourClass: "green darken-4",
@@ -232,10 +246,14 @@ export default {
         images: [
           {
             src:
-              "https://image.winudf.com/v2/image1/Y29tLnN0YXJtYXRoc29ubGluZS5zdHVkZW50X3NjcmVlbl85XzE1NzkxNzkyMTJfMDEw/screen-9.jpg?fakeurl=1&type=.jpg",
+              "/static/intern-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src: "/static/intern-2.png",
+          },
+          {
+            src:
+              "/static/intern-3.png",
           },
         ],
         colourClass: "light-blue darken-4",
@@ -266,10 +284,10 @@ export default {
         images: [
           {
             src:
-              "https://www.weekendnotes.com/im/006/07/lamb-shank-pie-on-the-bone-the-warwick-tavern1.JPG",
+              "/static/warwick-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src: "/static/warwick-2.png",
           },
         ],
         colourClass: "red darken-4",
@@ -294,10 +312,15 @@ export default {
         isActive: false,
         images: [
           {
-            src: "https://i.imgur.com/w7Y0i8k.png",
+            src:
+              "/static/physio-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src: "/static/physio-2.png",
+          },
+          {
+            src:
+              "/static/physio-3.png",
           },
         ],
         colourClass: "cyan darken-4",
@@ -325,10 +348,11 @@ export default {
         images: [
           {
             src:
-              "https://kmscubreporter.com/wp-content/uploads/2018/04/Books.jpg",
+              "/static/tutor-1.png",
           },
           {
-            src: "https://i.imgur.com/46vNqIV.png",
+            src:
+              "/static/tutor-2.png",
           },
         ],
         colourClass: "brown darken-4",
