@@ -30,6 +30,7 @@
       </v-btn>
 
       <v-spacer></v-spacer>
+      <span class="d-sm-block d-none">Powered by</span>
       <!-- <div class="d-flex align-center"> -->
         <v-img
           alt="Vue Logo"

@@ -18,6 +18,9 @@
               <p>
                 <strong>Email:</strong> kevin.thach.ngo@gmail.com
               </p>
+              <p>
+                <strong>Current Location:</strong> Sydney, NSW, Australia
+              </p>
             </v-card-text>
           </v-card>
         </v-row>
@@ -27,12 +30,14 @@
           <v-timeline-item icon="mdi-clipboard-account" color="blue darken-4 mb-3">
             <v-card :ripple="{center: true}">
               <v-card-title class="blue darken-4 mb-3" style="word-break: normal">
-                Employment Status
+                Career Status
                 <v-spacer></v-spacer>
                 {{monthYear}}
               </v-card-title>
               <v-card-text>
-                <h3>Contract ending. Looking for new employment opportunities!</h3>
+                <h2>Contract ending. Looking for new employment opportunities!</h2>
+                <br />
+                <p class="subtitle-1">Bachelor of Engineering (Software) | In the workforce since 2016 | Australian Citizen</p>                
               </v-card-text>
             </v-card>
           </v-timeline-item>
@@ -115,8 +120,7 @@ var months = [
   "December",
 ];
 var date = new Date();
-var finalDate =
-  date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+var finalDate = months[date.getMonth()] + " " + date.getFullYear();
 
 export default {
   name: "Home",
