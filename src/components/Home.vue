@@ -1,3 +1,6 @@
+<style scoped src="@/assets/typewriter.css">
+</style>
+
 <template>
   <v-container>
     <v-row class="text-center">
@@ -9,7 +12,9 @@
                 <h1>Kevin Thach Ngo</h1>
               </v-row>
             </v-card-title>
-            <v-card-subtitle>Software Engineer</v-card-subtitle>
+            <v-card-subtitle class="typewriter py-0">
+              <span class="typewriter-text">Software Engineer</span>
+            </v-card-subtitle>
             <v-card-text class="subtitle-1">
               <p>Hey, welcome to my simple website. Important links are at the top, contact information is here, and my work timeline is right below.</p>
               <p>
@@ -37,7 +42,9 @@
               <v-card-text>
                 <h2>Contract ending. Looking for new employment opportunities!</h2>
                 <br />
-                <p class="subtitle-1">Bachelor of Engineering (Software) | In the workforce since 2016 | Australian Citizen</p>                
+                <p
+                  class="subtitle-1"
+                >Bachelor of Engineering (Software) | In the workforce since 2016 | Australian Citizen</p>
               </v-card-text>
             </v-card>
           </v-timeline-item>
