@@ -154,7 +154,7 @@ export default {
         subtitle: "Star Maths Online",
         subtitleLink: "https://starmathsonline.com.au/",
         icon: "mdi-star-circle",
-        date: "August 2019 - August 2020",
+        date: "August 2019 - September 2020",
         body: `<strong>Technologies used: </strong> AngularJS, Entity Framework 6, ASP.NET Web API 2, SQL Server 2017.
         <br /><br />
         <div class="text-left">
