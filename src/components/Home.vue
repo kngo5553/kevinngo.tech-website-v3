@@ -16,35 +16,51 @@
               <span class="typewriter-text">Software Engineer</span>
             </v-card-subtitle>
             <v-card-text class="subtitle-1">
-              <p>Hey, welcome to my simple website. Important links are at the top, contact information is here, and my work timeline is right below.</p>
               <p>
-                <strong>Mobile number:</strong> 0423031873
+                Hey, welcome to my simple website. Important links are at the
+                top, contact information is here, and my work timeline is right
+                below.
               </p>
-              <p>
-                <strong>Email:</strong> kevin.thach.ngo@gmail.com
-              </p>
-              <p>
-                <strong>Current Location:</strong> Sydney, NSW, Australia
-              </p>
+              <p><strong>Mobile number:</strong> 0423031873</p>
+              <p><strong>Email:</strong> kevin.thach.ngo@gmail.com</p>
+              <p><strong>Current Location:</strong> Sydney, NSW, Australia</p>
             </v-card-text>
           </v-card>
         </v-row>
       </v-col>
       <v-col cols="12">
         <v-timeline dense>
-          <v-timeline-item icon="mdi-clipboard-account" color="blue darken-4 mb-3">
-            <v-card :ripple="{center: true}">
-              <v-card-title class="blue darken-4 mb-3" style="word-break: normal">
+          <v-timeline-item
+            icon="mdi-clipboard-account"
+            color="blue darken-4 mb-3"
+          >
+            <v-card :ripple="{ center: true }">
+              <v-card-title
+                class="blue darken-4 mb-3"
+                style="word-break: normal"
+              >
                 Career Status
                 <v-spacer></v-spacer>
-                {{monthYear}}
+                {{ monthYear }}
               </v-card-title>
               <v-card-text>
-                <h2>Contract ending. Looking for new employment opportunities!</h2>
+                <h2>
+                  Currently working full-time as Software Engineer at Service
+                  NSW.
+                </h2>
                 <br />
-                <p
-                  class="subtitle-1"
-                >Bachelor of Engineering (Software) | In the workforce since 2016 | Australian Citizen</p>
+                <p class="subtitle-1">
+                  <b>SNSW Bushfire Support Digital | Crisis Response Team</b>
+                </p>
+                <p class="subtitle-1">Front end: ReactJS</p>
+                <p class="subtitle-1">Back end: Apigee, Java/Kotlin, SQL, MongoDB</p>
+                <p class="subtitle-1">CI/CD: Gitlab, TAS/Cloud Foundry</p>
+                <p class="subtitle-1">
+                  Testing: Jest, React Testing Library, TestCafe, JUnit, Cypress
+                </p>
+                <p class="subtitle-1">
+                  Other: Jira, Confluence, Miro, Abstract
+                </p>
               </v-card-text>
             </v-card>
           </v-timeline-item>
@@ -58,14 +74,20 @@
             <v-lazy
               v-model="item.isActive"
               :options="{
-                threshold: .5
+                threshold: 0.5,
               }"
               class="fill-height"
               transition="fade-transition"
             >
               <v-card class="fill-height">
-                <v-card-title class :class="item.colourClass" style="word-break: normal">
-                  <span class="pr-0">{{item.title}} | {{item.subtitle}}</span>
+                <v-card-title
+                  class
+                  :class="item.colourClass"
+                  style="word-break: normal"
+                >
+                  <span class="pr-0"
+                    >{{ item.title }} | {{ item.subtitle }}</span
+                  >
                   <v-btn
                     v-if="item.subtitleLink"
                     :href="item.subtitleLink"
@@ -76,11 +98,16 @@
                     <v-icon>mdi-open-in-new</v-icon>
                   </v-btn>
                   <v-spacer></v-spacer>
-                  <span class="text-right">{{item.date}}</span>
+                  <span class="text-right">{{ item.date }}</span>
                 </v-card-title>
 
                 <!-- <v-img :src="item.imgSrc"></v-img> -->
-                <v-carousel cycle interval="15000" hide-delimiter-background show-arrows-on-hover>
+                <v-carousel
+                  cycle
+                  interval="15000"
+                  hide-delimiter-background
+                  show-arrows-on-hover
+                >
                   <v-carousel-item
                     v-for="img in item.images"
                     :key="img.id"
@@ -89,11 +116,21 @@
                     @click.stop="$set(dialog, img.src + item.title, true)"
                   >
                     <template v-slot:placeholder>
-                      <v-row class="fill-height ma-0" align="center" justify="center">
-                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="grey lighten-5"
+                        ></v-progress-circular>
                       </v-row>
                     </template>
-                    <v-dialog v-model="dialog[img.src + item.title]" max-width="1600">
+                    <v-dialog
+                      v-model="dialog[img.src + item.title]"
+                      max-width="1600"
+                    >
                       <v-img :src="img.src"></v-img>
                     </v-dialog>
                   </v-carousel-item>
@@ -203,12 +240,12 @@ export default {
         are tracked using various metrics, the data analysed, and then displayed as information analytics in the Parent, Teacher, and School platforms.
         <br /><br />
         My role was to add in new engagement features, fix existing bugs, and update the quality of life. The engagement features were my most important contributions in this role. They were:
-        <li>A smart one-step "Play Now" button for Questions that skipped several click and automatically chose a substrand topic based on history.</li>
-        <li>A new "event" system to engage users on a daily, weekly, and monthly basis.</li>
-        <li>An updated character creation and pet selection process with more interactivity and involvement.</li>
-        <li>An onboarding process that was the game's first tutorial/guide system.</li>
-        <li>An in-game communications system in the form of a mailbox.</li>
-        <li>And more minor work such as updating leaderboards.</li>
+        <p class="subtitle-1">A smart one-step "Play Now" button for Questions that skipped several click and automatically chose a substrand topic based on history.</p>
+        <p class="subtitle-1">A new "event" system to engage users on a daily, weekly, and monthly basis.</p>
+        <p class="subtitle-1">An updated character creation and pet selection process with more interactivity and involvement.</p>
+        <p class="subtitle-1">An onboarding process that was the game's first tutorial/guide system.</p>
+        <p class="subtitle-1">An in-game communications system in the form of a mailbox.</p>
+        <p class="subtitle-1">And more minor work such as updating leaderboards.</p>
         <br />
         It is also worth noting that the game's engine technology was shifted to Cocos2d. I played a key role in supporting this technology shift but did not 
         continue to work on the game after it was finished.
