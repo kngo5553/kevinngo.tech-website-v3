@@ -21,7 +21,7 @@
         <v-icon>mdi-github</v-icon>
       </v-btn>
       <v-btn
-        href="/static/resume-aug-2020v2.pdf"
+        href='./static/resume-aug-2020v2.pdf'
         target="_blank"
         text
       >

@@ -112,7 +112,7 @@
                     v-for="img in item.images"
                     :key="img.id"
                     :src="img.src"
-                    lazy-src="/static/placeholder.svg"
+                    lazy-src="./static/placeholder.svg"
                     @click.stop="$set(dialog, img.src + item.title, true)"
                   >
                     <template v-slot:placeholder>
@@ -177,13 +177,13 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/fullstackdeveloper-1.png",
+            src: "./static/fullstackdeveloper-1.png",
           },
           {
-            src: "/static/fullstackdeveloper-2.png",
+            src: "./static/fullstackdeveloper-2.png",
           },
           {
-            src: "/static/fullstackdeveloper-3.png",
+            src: "./static/fullstackdeveloper-3.png",
           },
         ],
         colourClass: "deep-orange darken-4",
@@ -213,16 +213,16 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/gamedev-1.png",
+            src: "./static/gamedev-1.png",
           },
           {
-            src: "/static/gamedev-2.png",
+            src: "./static/gamedev-2.png",
           },
           {
-            src: "/static/gamedev-3.png",
+            src: "./static/gamedev-3.png",
           },
           {
-            src: "/static/gamedev-4.png",
+            src: "./static/gamedev-4.png",
           },
         ],
         colourClass: "purple darken-4",
@@ -256,13 +256,13 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/matchm-1.png",
+            src: "./static/matchm-1.png",
           },
           {
-            src: "/static/matchm-2.png",
+            src: "./static/matchm-2.png",
           },
           {
-            src: "/static/matchm-3.png",
+            src: "./static/matchm-3.png",
           },
         ],
         colourClass: "green darken-4",
@@ -294,13 +294,13 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/intern-1.png",
+            src: "./static/intern-1.png",
           },
           {
-            src: "/static/intern-2.png",
+            src: "./static/intern-2.png",
           },
           {
-            src: "/static/intern-3.png",
+            src: "./static/intern-3.png",
           },
         ],
         colourClass: "light-blue darken-4",
@@ -330,10 +330,10 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/warwick-1.png",
+            src: "./static/warwick-1.png",
           },
           {
-            src: "/static/warwick-2.png",
+            src: "./static/warwick-2.png",
           },
         ],
         colourClass: "red darken-4",
@@ -358,13 +358,13 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/physio-1.png",
+            src: "./static/physio-1.png",
           },
           {
-            src: "/static/physio-2.png",
+            src: "./static/physio-2.png",
           },
           {
-            src: "/static/physio-3.png",
+            src: "./static/physio-3.png",
           },
         ],
         colourClass: "cyan darken-4",
@@ -391,10 +391,10 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/tutor-1.png",
+            src: "./static/tutor-1.png",
           },
           {
-            src: "/static/tutor-2.png",
+            src: "./static/tutor-2.png",
           },
         ],
         colourClass: "brown darken-4",
@@ -414,16 +414,16 @@ export default {
         isActive: false,
         images: [
           {
-            src: "/static/rateit-1.png",
+            src: "./static/rateit-1.png",
           },
           {
-            src: "/static/rateit-2.png",
+            src: "./static/rateit-2.png",
           },
         ],
         colourClass: "indigo darken-4",
         title: "RateIT",
         subtitle: "Capstone Project",
-        subtitleLink: "/static/rateitposter.pdf",
+        subtitleLink: "./static/rateitposter.pdf",
         icon: "mdi-bus-multiple",
         body: `<strong>Technologies used: </strong> Bootstrap, Google App Engine, Python, PostgreSQL, Jinja2, jQuery.
         <br /><br />
@@ -439,7 +439,7 @@ export default {
         <a href="https://www.theaustralian.com.au/business/business-spectator/news-story/smartphone-app-to-track-public-transport-woes/e14327cc0043c5d2a34543109291ea89"
           target="_blank">here for the article.</a>
         <br />
-        <a href="/static/article.png"
+        <a href="./static/article.png"
           target="_blank">Mirror screencap if there is paywall.</a>
 
         </div>`,
