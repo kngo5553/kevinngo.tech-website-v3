@@ -53,7 +53,9 @@
                   <b>SNSW Bushfire Support Digital | Crisis Response Team</b>
                 </p>
                 <p class="subtitle-1">Front end: ReactJS</p>
-                <p class="subtitle-1">Back end: Apigee, Java/Kotlin, SQL, MongoDB</p>
+                <p class="subtitle-1">
+                  Back end: Apigee, Java/Kotlin, SQL, MongoDB
+                </p>
                 <p class="subtitle-1">CI/CD: Gitlab, TAS/Cloud Foundry</p>
                 <p class="subtitle-1">
                   Testing: Jest, React Testing Library, TestCafe, JUnit, Cypress
@@ -112,7 +114,7 @@
                     v-for="img in item.images"
                     :key="img.id"
                     :src="img.src"
-                    lazy-src="./static/placeholder.svg"
+                    :lazy-src="placeholderSVG"
                     @click.stop="$set(dialog, img.src + item.title, true)"
                   >
                     <template v-slot:placeholder>
@@ -172,6 +174,7 @@ export default {
   data: () => ({
     dialog: {},
     monthYear: finalDate,
+    placeholderSVG: "./static/placeholder.svg",
     items: [
       {
         isActive: false,
